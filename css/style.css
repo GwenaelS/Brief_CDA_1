@@ -1,0 +1,73 @@
+*{
+    color: #FFFFFF;
+}
+body {
+    background-color: #27476E;
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+}
+a{
+    text-decoration: none;
+}
+h1{
+    font-weight: 700;
+    font-size: 2.3rem;
+}
+/* ========================= */
+/*       HEADER NAV          */
+/* ========================= */
+
+header, footer{
+    background-color: #1B2F4A;
+    width: 100%;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+    padding: 1rem;
+}
+.main_logo{
+    width: 50px;
+}
+nav ul{
+    display: flex;
+    gap: 1rem;
+}
+nav a:hover{
+    text-decoration: underline #FF00EE;
+}
+
+/* ========================= */
+/*  FOOTER                   */
+/* ========================= */
+
+footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+footer > div{
+    padding: 1rem;
+}
+.footer_links{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+.footer_socials{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    gap: 20px;
+}
+.logo{
+    width: 70px;
+}
+.footer_links a:hover{
+    text-decoration: underline white;
+}

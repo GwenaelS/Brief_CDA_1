@@ -1,0 +1,60 @@
+/* ========================= */
+/*  CHARACTER SECTION        */
+/* ========================= */
+
+main{
+    max-width: 80%;
+    margin: auto;
+    margin-top: 8vh;
+    margin-bottom: 8vh;
+}
+section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+section div{
+    text-align: center;
+}
+
+
+.character-container{
+    display: flex;
+    justify-content: center;
+    padding: 1rem;
+    margin-bottom: 2vh;
+}
+.character-img{
+    max-width: 70%;
+    display: block;
+}
+
+
+h1{
+    color: red;
+}
+#hero_title{
+    font-size: 2rem;
+}
+.subtitle{
+    font-size: 0.8rem;
+    font-style: italic;
+    font-weight: 200;
+}
+p{
+    line-height: 1.2rem;
+    margin-top: 2rem;
+}
+.cda{
+    display: inline-block;
+    background-color: black;
+    border: solid 1px #FF00EE;
+    border-radius: 25px;
+    padding: 0.5rem 1rem;
+    margin-top: 1rem;
+}
+.cda:hover{
+    background-color: #FF00EE;
+    border: black 1px solid;
+    color: black;
+}
