@@ -45,16 +45,3 @@ p{
     line-height: 1.2rem;
     margin-top: 2rem;
 }
-.cda{
-    display: inline-block;
-    background-color: black;
-    border: solid 1px #FF00EE;
-    border-radius: 25px;
-    padding: 0.5rem 1rem;
-    margin-top: 1rem;
-}
-.cda:hover{
-    background-color: #FF00EE;
-    border: black 1px solid;
-    color: black;
-}

@@ -15,6 +15,19 @@ h1{
     font-weight: 700;
     font-size: 2.3rem;
 }
+.cta{
+    display: inline-block;
+    background-color: black;
+    border: solid 1px #FF00EE;
+    border-radius: 25px;
+    padding: 0.5rem 1rem;
+    margin-top: 1rem;
+}
+.cta:hover{
+    background-color: #FF00EE;
+    border: black 1px solid;
+    color: black;
+}
 /* ========================= */
 /*       HEADER NAV          */
 /* ========================= */
@@ -66,7 +79,7 @@ footer > div{
     gap: 20px;
 }
 .logo{
-    width: 70px;
+    width: 35px;
 }
 .footer_links a:hover{
     text-decoration: underline white;

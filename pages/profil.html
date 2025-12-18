@@ -10,7 +10,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../css/reset.css">
     <link rel="stylesheet" href="../css/style.css">
-    <link rel="stylesheet" href="../css/profil.css">
+    <link rel="stylesheet" href="../css/login.css">
+    <!-- <script src="https://kit.fontawesome.com/1b6a39ab9e.js" crossorigin="anonymous"></script> -->
 </head>
 <body>
     <header>
@@ -29,8 +30,35 @@
         </nav>
     </header>
     <main>
-        <section>
-
+        <section id="user_profil_card">
+            <div class="user_image_container">
+                <img src="../images/user_icon.png" alt="Photo de profil" class="user_image">
+            </div>
+            <p>user_identifiant</p>
+        </section>
+        <section id="user_profil_informations">
+            <div id="profil_informations" class="glass-card">
+                <p>
+                    Identifiant : <br><span>user_identifiant</span>
+                </p>
+                <p>
+                    E-mail : <br><span>user_mail</span>
+                </p>
+                <p>
+                    Téléphone : <br><span>user_phone</span>
+                </p>
+                <p>
+                    Adresse : <br><span>user_location</span>
+                </p>
+                <!-- <button class="cta">Modifier</button> -->
+            </div>
+            <form id="profil_information_form" action="#" method="post">
+                <input type="text" name="user_identifiant" id="user_identifiant" placeholder="user_identifiant">
+                <input type="email" name="user_mail" id="user_mail" placeholder="user_mail">
+                <input type="tel" name="user_phone" id="user_phone" placeholder="user_phone">
+                <input type="text" name="user_location" id="user_location" placeholder="user_location">
+                <input type="submit" value="Modifier">
+            </form>
         </section>
     </main>
     <footer>
