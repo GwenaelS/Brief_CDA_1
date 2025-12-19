@@ -1,15 +1,13 @@
 *{
     color: #FFFFFF;
+    text-decoration: none;
 }
 body {
     background-color: #27476E;
     font-family: "Inter", sans-serif;
-    font-optical-sizing: auto;
     font-weight: 300;
     font-style: normal;
-}
-a{
-    text-decoration: none;
+    font-optical-sizing: auto;
 }
 h1{
     font-weight: 700;
