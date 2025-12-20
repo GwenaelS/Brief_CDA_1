@@ -51,4 +51,3 @@ registerForm.addEventListener("submit", function (event) {
     // Redirection vers la page de connexion
     window.location.href = "login.html";
 });
-

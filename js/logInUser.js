@@ -15,9 +15,10 @@ loginForm.addEventListener("submit", function (event) {
     // Si oui alors on peut aller sur la page de profil
     // Si non on affiche un message d'erreur
 
+    const usersFromStorage = localStorage.getItem("users");
+    
     let users;
 
-    const usersFromStorage = localStorage.getItem("users");
     users = JSON.parse(usersFromStorage);
 
     // if (user == users) {
@@ -29,9 +30,13 @@ loginForm.addEventListener("submit", function (event) {
     // Problème : comment comparé mes valeurs et celles du tableau ?
     // Problème : comment trouver l'utilisateur dans une liste d'entrée d'un tableau ?
     // Réponse : GPT une boucle for ou la méthode find
+    // J'opte pour la méthode find qui est plus courte et moderne, fonctionne comme une boucle for
 
-    
     const matchedUser = users.find(u => u.email === email && u.password === password);
-
-    // window.location.href = "profil.html";
+    
+    if (matchedUser) {
+        window.location.href = "profil.html";
+    } else {
+        alert("Informations érronées");
+    }
 })
