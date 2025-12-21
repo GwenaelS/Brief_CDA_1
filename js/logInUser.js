@@ -35,8 +35,10 @@ loginForm.addEventListener("submit", function (event) {
     const matchedUser = users.find(u => u.email === email && u.password === password);
     
     if (matchedUser) {
+        // Création d'une session
+        sessionStorage.setItem("userSession", JSON.stringify(matchedUser));
         window.location.href = "profil.html";
     } else {
-        alert("Informations érronées");
+        alert("Email ou mot de passe incorrect");
     }
 })
