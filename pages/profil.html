@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="../css/reset.css">
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="../css/login.css">
-    <!-- <script src="https://kit.fontawesome.com/1b6a39ab9e.js" crossorigin="anonymous"></script> -->
+    <script defer src="../js/readUser.js"></script>
 </head>
 <body>
     <header>
@@ -39,26 +39,19 @@
         <section id="user_profil_informations">
             <div id="profil_informations" class="glass-card">
                 <p>
-                    Identifiant : <br><span>user_identifiant</span>
+                    E-mail : <br><span id="userEmail">...</span>
                 </p>
                 <p>
-                    E-mail : <br><span>user_mail</span>
+                    Identifiant : <br><span>...</span>
                 </p>
                 <p>
-                    Téléphone : <br><span>user_phone</span>
+                    Téléphone : <br><span>...</span>
                 </p>
                 <p>
-                    Adresse : <br><span>user_location</span>
+                    Adresse : <br><span>...</span>
                 </p>
-                <!-- <button class="cta">Modifier</button> -->
+                <button id="disconnection">Déconnexion</button>
             </div>
-            <form id="profil_information_form" action="#" method="post">
-                <input type="text" name="user_identifiant" id="user_identifiant" placeholder="user_identifiant">
-                <input type="email" name="user_mail" id="user_mail" placeholder="user_mail">
-                <input type="tel" name="user_phone" id="user_phone" placeholder="user_phone">
-                <input type="text" name="user_location" id="user_location" placeholder="user_location">
-                <input type="submit" value="Modifier">
-            </form>
         </section>
     </main>
     <footer>

@@ -6,11 +6,6 @@ loginForm.addEventListener("submit", function (event) {
     const email = document.querySelector("#email").value;
     const password = document.querySelector("#password").value;
 
-    const user = {
-        email: email,
-        password: password
-    };
-
     // C'est la que je dois me debrouiller, je dois regarder si les valeurs entrés correspondent au localStorage
     // Si oui alors on peut aller sur la page de profil
     // Si non on affiche un message d'erreur
