@@ -2,7 +2,7 @@
     color: #FFFFFF;
     text-decoration: none;
 }
-body {
+body{
     background-color: #27476E;
     font-family: "Inter", sans-serif;
     font-weight: 300;
@@ -29,7 +29,6 @@ h1{
 /* ========================= */
 /*       HEADER NAV          */
 /* ========================= */
-
 header, footer{
     background-color: #1B2F4A;
     width: 100%;
@@ -50,11 +49,9 @@ nav ul{
 nav a:hover{
     text-decoration: underline #FF00EE;
 }
-
 /* ========================= */
 /*  FOOTER                   */
 /* ========================= */
-
 footer{
     display: flex;
     flex-direction: column;

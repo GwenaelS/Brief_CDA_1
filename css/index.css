@@ -1,7 +1,6 @@
 /* ========================= */
 /*  CHARACTER SECTION        */
 /* ========================= */
-
 main{
     max-width: 80%;
     margin: auto;
@@ -12,12 +11,8 @@ section{
     display: flex;
     flex-direction: column;
     align-items: center;
-}
-section div{
     text-align: center;
 }
-
-
 .character-container{
     display: flex;
     justify-content: center;
@@ -28,8 +23,6 @@ section div{
     max-width: 70%;
     display: block;
 }
-
-
 h1{
     color: red;
 }
@@ -44,4 +37,21 @@ h1{
 p{
     line-height: 1.2rem;
     margin-top: 2rem;
+}
+
+/* ====== MEDIAS QUERIES ====== */
+
+/* ====== TABLETTE ====== */
+@media (min-width: 768px) {
+    section{
+        flex-direction: row-reverse;
+        text-align: left;
+    }
+    .character-informations{
+        /* width: 80%; */
+        max-width: 60%;
+    }
+    .character-img{
+        max-width: 90%;
+    }
 }
