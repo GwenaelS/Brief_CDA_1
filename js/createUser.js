@@ -28,11 +28,16 @@ registerForm.addEventListener("submit", async function (event) {
     event.preventDefault();
 
     // Je crée des variables auquel j'assigne les valeurs entrée par l'utilisateur dans les champs email et password via .value
+    const name = document.getElementById("name").value;
+    const username = document.getElementById("userName").value;
     const email = document.getElementById("email").value;
     const password = document.getElementById("password").value;
+    const passwordConfirm = document.getElementById("password_confirm").value;
 
-
-
+    if (password !== passwordConfirm) {
+        alert("Les mots de passe ne correspondent pas");
+        return; // STOP : on ne continue pas le script
+    }
 
 
 
@@ -49,6 +54,8 @@ registerForm.addEventListener("submit", async function (event) {
 
     // Je crée un objet user et je rentre en données celle de mes variables
     const user = {
+        name : name,
+        username: username,
         email: email, // Erreur de ma part a ne pas refaire dans un objet pas de ";" en fin de ligne
         password: hashedPassword
     };

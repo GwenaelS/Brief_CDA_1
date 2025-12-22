@@ -10,6 +10,10 @@ if(userSession === null) {
 
 const user = JSON.parse(userSession);
 
+const nameSpan = document.getElementById("name");
+nameSpan.textContent = user.name;
+const userNameSpan = document.getElementById("userName");
+userName.textContent = user.username;
 const emailSpan = document.getElementById("userEmail");
 emailSpan.textContent = user.email;
 
