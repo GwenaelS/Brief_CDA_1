@@ -10,8 +10,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../css/reset.css">
     <link rel="stylesheet" href="../css/style.css">
-    <link rel="stylesheet" href="../css/login.css">
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="../css/profil.css">
+    <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
     <script defer src="../js/readUser.js"></script>
 </head>
 <body>
@@ -31,29 +31,32 @@
         </nav>
     </header>
     <main>
-        <section id="user_profil_card">
-            <div class="user_image_container">
-                <img src="../images/user_icon.png" alt="Photo de profil" class="user_image">
+        <div id="user_profil_card">
+            <div>
+                <img src="../images/user_icon.png" alt="Photo de profil">
             </div>
-            <p>user_identifiant</p>
-        </section>
-        <section id="user_profil_informations">
-            <div id="profil_informations" class="glass-card">
-                <p>
-                    E-mail : <br><span id="userEmail">...</span>
-                </p>
-                <p>
-                    Identifiant : <br><span>...</span>
-                </p>
-                <p>
-                    Téléphone : <br><span>...</span>
-                </p>
-                <p>
-                    Adresse : <br><span>...</span>
-                </p>
+            <div id="profil_informations">
+                <div>
+                    <p>E-mail :</p>
+                    <p id="userEmail" class="user_infos">...</p>
+                </div>
+                <div>
+                    <p>Identifiant :</p>
+                    <p class="user_infos">...</p>
+                </div>
+                <div>
+                    <p>Téléphone :</p>
+                    <p class="user_infos">...</p>
+                </div>
+                <div>
+                    <p>Adresse :</p>
+                    <p class="user_infos">...</p>
+                </div>
                 <button id="disconnection">Déconnexion</button>
             </div>
-        </section>
+        </div>
+
+
     </main>
     <footer>
         <div class="footer_links">

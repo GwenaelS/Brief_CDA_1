@@ -10,7 +10,7 @@ if(userSession === null) {
 
 const user = JSON.parse(userSession);
 
-const emailSpan = document.querySelector("#userEmail");
+const emailSpan = document.getElementById("userEmail");
 emailSpan.textContent = user.email;
 
 // Deconnexion
