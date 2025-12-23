@@ -2,11 +2,17 @@
 // Ceci a été fais a l'aide de GPT, j'ai eu énormément de mal a savoir comment commencer par ou etc...
 // A partir du code fais, je compte faire les suivants avec moins d'aide puisque j'ai normalement tout les éléments a ma disposition
 
-// Ajout cryptage du mot de passe (NEED STUDY)
+// Fonction qui hache le mot de passe
+// La fonction est async car elle utilise await
 async function hashPassword(password) {
+    // TextEncoder transforme les données en binaires pour le cryptage
     const encoder = new TextEncoder();
+    // Transforme la string en Uint8Array (tableau d’octets)
     const data = encoder.encode(password);
 
+    // crypto.subtle : API cryptographique native du navigateur
+    // .digest() : prend du binaire retourn du hashage
+    // "SHA-256" : clé de hachage
     const hashBuffer = await crypto.subtle.digest("SHA-256", data);
     const hashArray = Array.from(new Uint8Array(hashBuffer));
 
@@ -21,40 +27,35 @@ const registerForm = document.getElementById("registerForm")
 // L'action "submit" du formulaire #registerForm est attendu
 // Execute alors la fonction "event"
 
-// NEED STUDY ASYNC
 registerForm.addEventListener("submit", async function (event) {
-    // Empeche le rechargement de la page (pas sur de son utilité besoin de plus de renseignement)
+    // Empeche le rechargement de la page
     // "preventDefault() est utilisé : pour bloquer le rechargement de page et laisser JS gérer les données"
     event.preventDefault();
 
-    // Je crée des variables auquel j'assigne les valeurs entrée par l'utilisateur dans les champs email et password via .value
-    const name = document.getElementById("name").value;
+    // Je crée des variables auquel j'assigne les valeurs entrée par l'utilisateur dans les champs via .value
     const username = document.getElementById("userName").value;
     const email = document.getElementById("email").value;
     const password = document.getElementById("password").value;
     const passwordConfirm = document.getElementById("password_confirm").value;
 
+    // Si le mdp n'est pas pareil que le second mdp
     if (password !== passwordConfirm) {
         alert("Les mots de passe ne correspondent pas");
         return; // STOP : on ne continue pas le script
     }
 
-
-
+    // Variable qui recupère le localStorage users
     const usersFromStorage = localStorage.getItem("users");
 
+    // Si usersFromStorage existe alors on parse en objet JS assigner a users, sinon c'est un tableau vide qu'on assigne a users
+    // "condition ? valeur_si_vrai : valeur_si_faux"
     let users = usersFromStorage ? JSON.parse(usersFromStorage) : [];
     
+    // Hachage du mdp de l'utilisateur avec la fonction de hachage du mdp
     const hashedPassword = await hashPassword(password);
-
-
-
-
-
 
     // Je crée un objet user et je rentre en données celle de mes variables
     const user = {
-        name : name,
         username: username,
         email: email, // Erreur de ma part a ne pas refaire dans un objet pas de ";" en fin de ligne
         password: hashedPassword

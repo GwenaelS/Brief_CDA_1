@@ -12,7 +12,6 @@ main {
 	align-items: center;
 	/* text-align: center; */
 }
-
 #user_profil_card{
     width: 70%;
     background-color: #2C5B95;
@@ -43,12 +42,14 @@ button{
     padding: 1rem 0.5rem;
     margin: auto;
     border-radius: 50px;
-    background-color: rgb(255, 0, 0, 0.7)
+    border: solid 1px black;
+    background-color: rgb(255, 0, 0, 0.7);
+    cursor: pointer;
 }
-
-
+button:active {
+    transform: translateY(2px);
+}
 /* ====== MEDIAS QUERIES ====== */
-
 /* ====== TABLETTE AND MORE ====== */
 @media (min-width: 768px) {
     #user_profil_card{

@@ -79,7 +79,6 @@ footer > div{
 .footer_links a:hover{
     text-decoration: underline white;
 }
-
 @media (min-width: 768px) {
     footer{
         flex-direction: row;
