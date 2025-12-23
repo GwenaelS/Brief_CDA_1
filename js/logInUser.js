@@ -9,6 +9,7 @@ async function hashPassword(password) {
     return hashArray.map(b => b.toString(16).padStart(2, "0")).join("");
 }
 
+
 const loginForm = document.getElementById("loginForm");
 
 loginForm.addEventListener("submit", async function (event) {
