@@ -3,17 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Connexion - Wystrelia</title>
+    <title>Accueil - Wystrelia</title>
     <!-- Font : Inter -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../css/reset.css">
     <link rel="stylesheet" href="../css/style.css">
-    <link rel="stylesheet" href="../css/login.css">
+    <link rel="stylesheet" href="../css/index.css">
     <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
     <script defer src="../js/profilLink.js"></script>
-    <script defer src="../js/loginUser.js"></script>
 </head>
 <body>
     <header>
@@ -21,7 +20,7 @@
             <a href="index.html">
                 <img src="../images/logo_wystrelia_mini_2.png" alt="Logo Wystrelia" class="main_logo">
             </a>
-            <ul class="flex">
+            <ul>
                 <li>
                     <a href="index.html">Accueil</a>
                 </li>
@@ -32,14 +31,23 @@
         </nav>
     </header>
     <main>
-        <form id="loginForm">
-            <h1>Connexion</h1>
-            <input type="email" name="email" id="email" placeholder="E-mail" required>
-            <input type="password" name="password" id="password" placeholder="Mot de passe" required>
-            <input type="submit">
-            <a href="#">Mot de passe oublié ?</a>
-            <a href="../pages/register.html">Pas de compte ? Inscrivez-vous</a>
-        </form>
+        <section>
+            <div class="character-container">
+                <img src="../images/Cotheran_ragged.png" alt="Personnage : Cothran Thomael, personnage de Zenji" class="character-img">
+            </div>
+            <div class="character-informations">
+                <span id="hero_title">Salutations, je suis</span>
+                <h1>Cothran Thomael</h1>
+                <span class="subtitle">Personnage de Zenji</span>
+                <p>
+                    Né de l'imagination d'un être brisé, je suis son protecteur, son ange, créé pour épauler la création originelle de ce monde et orienter les choix de son propriétaire.
+                </p>
+                <p>
+                    Pour vivre son idéal enfin façonné, la vérité, il l'a oubliée, et pour cette part de lui, ce monde est réel. Par devoir, par amour, pour son idéal, je garderai le secret, moi, Cothran Thomael, son idéal de l'amour.
+                </p>
+                <a href="#" class="cta">Suivez mes aventures</a>
+            </div>
+        </section>
     </main>
     <footer>
         <div class="footer_links">

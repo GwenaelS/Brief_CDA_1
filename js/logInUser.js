@@ -38,7 +38,7 @@ loginForm.addEventListener("submit", async function (event) {
     if (matchedUser) {
         // Création d'une session
         sessionStorage.setItem("userSession", JSON.stringify(matchedUser));
-        window.location.href = "profil.html";
+        window.location.href = "index.html";
     } else {
         alert("Email ou mot de passe incorrect");
     }

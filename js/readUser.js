@@ -1,8 +1,12 @@
 const userSession = sessionStorage.getItem("userSession");
 
-// Protection de la page profil
+// Protection de la page profil et modification nav
 if(userSession === null) {
     window.location.href = "login.html";
+} else {
+    const profilButton = document.getElementById("profilButton");
+    profilButton.href = "profil.html";
+    profilButton.textContent = "Profil";
 }
 
 // Affichage d'information

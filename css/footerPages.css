@@ -1,0 +1,31 @@
+html, body {
+	height: 100%;
+}
+body {
+	display: flex;
+	flex-direction: column
+}
+main {
+    background-color: #2b5992;
+	flex: 1;
+    display: flex;
+	justify-content: center;
+	align-items: center;
+}
+main>div{
+    padding: 1.5rem;
+}
+h2{
+    font-size: 1.5rem;
+    font-weight: 400;
+    padding: 1rem 0;
+}
+p{
+    padding: 1rem 0;
+}
+@media (min-width: 768px) {
+    main{
+        width: 70%;
+        margin: auto;
+    }
+}

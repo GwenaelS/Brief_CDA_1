@@ -12,21 +12,21 @@
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="../css/login.css">
     <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
-
     <script defer src="../js/createUser.js"></script>
+    <script defer src="../js/profilLink.js"></script>
 </head>
 <body>
     <header>
         <nav>
-            <a href="../index.html">
+            <a href="index.html">
                 <img src="../images/logo_wystrelia_mini_2.png" alt="Logo Wystrelia" class="main_logo">
             </a>
             <ul class="flex">
                 <li>
-                    <a href="../index.html">Acceuil</a>
+                    <a href="index.html">Accueil</a>
                 </li>
                 <li>
-                    <a href="login.html">Connexion</a>
+                    <a id="profilButton" href="login.html">Connexion</a>
                 </li>
             </ul>
         </nav>
@@ -37,22 +37,22 @@
             <input type="text" name="userName" id="userName" placeholder="Identifiant" required>
             <input type="email" name="email" id="email" placeholder="E-mail" required>
             <input type="password" name="password" id="password" placeholder="Mot de passe" required>
-            <input type="password" name="password_confirm" id="password_confirm" placeholder="Valider votre mot de passe" required>
+            <input type="password" name="password_confirm" id="password_confirm" placeholder="Confirmez votre mot de passe" required>
             <input type="submit" name="validate" id="validate">
-            <a href="login.html">Vous avez déja un compte ? Vous connectez</a>
+            <a href="login.html">Vous avez déjà un compte ? Connectez-vous</a>
         </form>
     </main>
     <footer>
         <div class="footer_links">
-            <a href="#">Politique de confidentialité</a>
-            <a href="#">Mentions Légales</a>
-            <a href="#">Contact</a>
+            <a href="privacy.html">Politique de confidentialité</a>
+            <a href="imprint.html">Mentions légales</a>
+            <a href="contact.html">Contact</a>
         </div>
         <div class="footer_socials">
-            <a href="#">
+            <a href="https://discord.gg/jaRUxDE6zn" target="_blank">
                 <img src="../images/logo_discord.svg" alt="Logo Discord" class="logo">
             </a>
-            <a href="#">
+            <a href="https://www.instagram.com/gwenael.samyn" target="_blank">
                 <img src="../images/logo_instagram.svg" alt="Logo Instagram" class="logo">
             </a>
         </div>

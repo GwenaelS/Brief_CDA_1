@@ -3,17 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Connexion - Wystrelia</title>
+    <title>Contact - Wystrelia</title>
     <!-- Font : Inter -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../css/reset.css">
     <link rel="stylesheet" href="../css/style.css">
-    <link rel="stylesheet" href="../css/login.css">
+    <link rel="stylesheet" href="../css/footerPages.css">
     <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
     <script defer src="../js/profilLink.js"></script>
-    <script defer src="../js/loginUser.js"></script>
 </head>
 <body>
     <header>
@@ -21,25 +20,44 @@
             <a href="index.html">
                 <img src="../images/logo_wystrelia_mini_2.png" alt="Logo Wystrelia" class="main_logo">
             </a>
-            <ul class="flex">
+            <ul>
                 <li>
                     <a href="index.html">Accueil</a>
                 </li>
                 <li>
-                    <a id="profilButton" href="login.html">Connexion</a>
+                    <a id="profilButton" href="../login.html">Connexion</a>
                 </li>
             </ul>
         </nav>
     </header>
     <main>
-        <form id="loginForm">
-            <h1>Connexion</h1>
-            <input type="email" name="email" id="email" placeholder="E-mail" required>
-            <input type="password" name="password" id="password" placeholder="Mot de passe" required>
-            <input type="submit">
-            <a href="#">Mot de passe oublié ?</a>
-            <a href="../pages/register.html">Pas de compte ? Inscrivez-vous</a>
-        </form>
+        <div>
+            <h1>Mentions légales</h1>
+            <section>
+                <h2>Éditeur du site</h2>
+                <p>
+                    Nom : Gwenaël Samyn<br>
+                    Site réalisé dans le cadre d’un exercice personnel / pédagogique.<br>
+                    Contact : samyngwenaelpro@gmail.com
+                </p>
+            </section>
+            <section>
+                <h2>Hébergement</h2>
+                <p>
+                    Hébergeur : GitHub Pages (GitHub, Inc.)<br>
+                    Adresse : 88 Colin P. Kelly Jr. Street, San Francisco, CA 94107, États-Unis<br>
+                    Site web : https://pages.github.com
+                </p>
+            </section>
+            <section>
+                <h2>Propriété intellectuelle</h2>
+                <p>
+                    Les contenus présents sur ce site (textes, images, éléments graphiques)
+                    sont fournis à titre d’exercice.<br>
+                    Toute reproduction ou utilisation sans autorisation est interdite.
+                </p>
+            </section>
+        </div>
     </main>
     <footer>
         <div class="footer_links">
